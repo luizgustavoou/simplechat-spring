@@ -13,7 +13,7 @@ A aplicação consiste em um simples chat para explorar o uso do Websocket em Ja
 # :wrench: Tecnologias utilizadas
 ## Back end
 * Spring Web;
-* 
+* Spring Websocket;
   
 ## Front end
 * React
