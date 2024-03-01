@@ -25,7 +25,9 @@ https://github.com/luizgustavoou/simplechat-spring/assets/89609312/7addf416-b965
 * Spring Websocket;
   
 ## Front end
-* React
+* React;
+* react-icons;
+* stomp/stompjs;
 
 ## Infraestrutura
 <!-- * Docker; -->
