@@ -1,13 +1,14 @@
 import "./App.css";
 import { IoSend } from "react-icons/io5";
 
-import { useEffect, useState } from "react";
-import { Client } from "@stomp/stompjs";
+import { useEffect, useState, MouseEvent } from "react";
+import { Client, IMessage } from "@stomp/stompjs";
+import { IMessageResponse } from "./entities/IMessage";
 
 const SOCKET_URL = "ws://localhost:8080/ws-message";
 
 function App() {
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState<string[]>([]);
 
   const [newMessage, setNewMessage] = useState("");
 
@@ -27,9 +28,11 @@ function App() {
 
     function onConnected() {
       console.log("Connected!!");
-      stompClient.subscribe("/topic/message", function (msg) {
+      stompClient.subscribe("/topic/message", function (msg: IMessage) {
+        console.log({ msg });
         if (msg.body) {
-          var jsonBody = JSON.parse(msg.body);
+          const jsonBody: IMessageResponse = JSON.parse(msg.body);
+
           if (jsonBody.message) {
             setMessages((values) => [...values, jsonBody.message]);
           }
@@ -48,7 +51,9 @@ function App() {
     };
   }, []);
 
-  const handleSendMessage = (e) => {
+  const handleSendMessage = (
+    e: MouseEvent<SVGElement, globalThis.MouseEvent>
+  ) => {
     e.preventDefault();
 
     if (client) {
