@@ -1,4 +1,4 @@
-# simplechat-spring
+# simplechat-with-spring
 <!-- license --> 
 
 ## :memo:  Sobre o projeto
