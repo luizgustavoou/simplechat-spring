@@ -49,7 +49,7 @@ npm i
 
 cd ../
 
-#Importe o projeto da pasta em alguma IDE de preferência e rode a aplicação com Spring Boot.
+#Importe o projeto da pasta sample-ws-v1 em alguma IDE de preferência e rode a aplicação com Spring Boot.
 ```
 
 ## :soon: Implementação futura
