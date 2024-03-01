@@ -4,6 +4,8 @@
 ## :memo:  Sobre o projeto
 A aplicação consiste em um simples chat para explorar o uso do Websocket em Java com Spring.
 
+Observaçãpo: Realizei uma aplicação de chat mais robusta no seguinte repositório: https://github.com/luizgustavoou/duckchat
+
 ## Layout web
 ![image](https://github.com/luizgustavoou/simplechat-spring/assets/89609312/19c29949-e900-49b8-a38d-47bb2e0f1ae0)
 
