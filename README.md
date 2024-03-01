@@ -7,6 +7,12 @@ A aplicação consiste em um simples chat para explorar o uso do Websocket em Ja
 ## Layout web
 ![image](https://github.com/luizgustavoou/simplechat-spring/assets/89609312/19c29949-e900-49b8-a38d-47bb2e0f1ae0)
 
+
+
+https://github.com/luizgustavoou/simplechat-spring/assets/89609312/7addf416-b965-4cd3-b3b6-c00ec5b5d91f
+
+
+
 <!-- ## Modelo conceitual -->
 ## :books: Funcionalidades
 * Chat;
