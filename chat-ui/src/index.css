@@ -7,6 +7,31 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .container {
   height: 100vh;
   background: linear-gradient(180deg, #191919 0%, rgba(22, 19, 65, 1) 100%);
@@ -26,6 +51,7 @@
 
 .messages {
   flex-grow: 1;
+  overflow: auto;
   padding: 1em;
   display: flex;
   flex-direction: column;
